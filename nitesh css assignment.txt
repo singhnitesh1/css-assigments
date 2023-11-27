@@ -1,0 +1,295 @@
+Module (CSS and CSS 3) -2
+ What are the benefits of using CSS?
+Ans.   CSS plays an important role, by using CSS you simply got to specify a repeated style for element once & use it multiple times as because CSS will automatically apply the required styles.
+The main advantage of CSS is that style is applied consistently across variety of sites. One instruction can control several areas which is advantageous.
+Web designers needs to use few lines of programming for every page improving site speed.
+Cascading sheet not only simplifies website development, but also simplifies the maintenance as a change of one line of code affects the whole web site and maintenance time.
+It is less complex therefore the effort are significantly reduced.
+It helps to form spontaneous and consistent changes.
+CSS changes are device friendly. With people employing a batch of various range of smart devices to access websites over the web, there's a requirement for responsive web design.
+It has the power for re-positioning. It helps us to determine the changes within the position of web elements who are there on the page.
+These bandwidth savings are substantial figures of insignificant tags that are indistinct from a mess of pages.
+Easy for the user to customize the online page
+It reduces the file transfer size.
+ What are the disadvantages of CSS?
+Ans. CSS, CSS 1 up to CSS3, result in creating of confusion among  web browsers.
+With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.
+There exists a scarcity of security.
+After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the browsers.
+The programming language world is complicated for non-developers and beginners. Different levels of CSS i.e. CSS, CSS 2, CSS 3 are often quite confusing.
+Browser compatibility (some styles sheet are supported and some are not).
+CSS works differently on different browsers. IE and Opera supports CSS as different logic.
+There might be cross-browser issues while using CSS.
+There are multiple levels which creates confusion for non-developers and beginners.
+ What is the difference between CSS2 and CSS3?
+Ans.CSS3 is split into many various documents known as Modules. each module adds new capability or extends options outlined in CSS2 over conserving backward compatibility. Work on CSS3 started around the time of publication of the initial CSS2 recommendation.
+The CSS3 version supports more browsers than CSS2.
+CSS3 introduces several new selectors. Those new selectors square measure largely in an exceeding type of pseudo-elements and pseudo-categories.
+The new addition of General relation Combinator will be wont to match relation parts of a given part through diacritic (~) combinator.
+CSS3 introduces several properties attended with new values and units. It facilitates styling of backgrounds, borders, boxes, etc., that permits the USA to stay most of the styling at intervals the computer network and HTML standards and our document, while not a necessity for all those proprietary third-party package packages.
+New values and new units square measure introduced to support all those new properties. for example, Angle units deg, grad, rad, and switch or Time units s and ms.
+ Name a few CSS style components
+Ans. <h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p>
+ What do you understand by CSS opacity?
+Ans.Set the opacity level for a <div> element:
+
+div {
+opacity: 0.5;
+}
+ How can the background color of an element be changed?
+Ans.The background-color property sets the background color of an element.
+Set the background color for a page:
+
+body {background-color: coral;}
+ How can image repetition of the backup be controlled?
+Ans.In this article, we will see how an image repetition of the backup is controlled in CSS. This task can be achieved by using the background-repeat property that will help us to control the repetition of the image.
+
+The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.
+
+Syntax:
+
+background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
+ What is the use of the background-position property?
+Ans.How to position a background-image:
+
+body {
+  background-image: url('w3css.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+ Which property controls the image scroll in the background?
+Ans.A background-image that will not scroll with the page (fixed):
+
+body {
+  background-image: url("img_tree.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+ Why should background and color be used as separate properties?
+Ans.The background-color property in CSS is used to specify the background color of an element. The background covers the total size of the element with padding and border but excludes margin. It makes the text so easy to read for the user. 
+
+Syntax:
+
+element {
+    background-color property
+}
+
+Default value : It has a default value i.e. transparent.
+
+Property Values:
+ How to center block elements using CSS1?
+Ans.In this article, we will see how to make block-level elements to the center using CSS. 
+
+Approach: There are two steps to center a block-level element -
+
+Step 1: Define the external width - We need to define the external width. Block-level elements have the default width of 100% of the webpage, so for centering the block element, we need space around it. So for generating the space, we are giving it a width.
+
+Step 2: Set the left-margin and the right-margin of the element to auto - Since we produced a remaining space by providing external width so now we need to align that space properly that's why we should use margin property. Margin is a property that tells how to align a remaining space. So for centering the element you must set left-margin to auto and right-margin to auto.
+
+
+ 
+
+Syntax:
+
+element {
+    width:200px;
+    margin: auto;
+}
+The below examples represent how to center block-level elements.
+
+Example 1: Here a single element (div) is centered inside the body.
+ How to maintain the CSS specifications?
+Ans.If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element.
+
+Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.
+
+Look at the following examples:
+
+Example 1
+In this example, we have used the "p" element as selector, and specified a red color for this element. The text will be red:<html>
+<head>
+  <style>
+    p {color: red;}
+  </style>
+</head>
+<body>
+
+<p>Hello World!</p>
+
+</body>
+</html>
+Example 2
+In this example, we have added a class selector (named "test"), and specified a green color for this class. The text will now be green (even though we have specified a red color for the element selector "p"). This is because the class selector is given higher priority:
+
+<html>
+<head>
+  <style>
+    .test {color: green;}
+    p {color: red;}
+  </style>
+</head>
+<body>
+
+<p class="test">Hello World!</p>
+
+</body>
+</html>
+ What are the ways to integrate CSS as a web page?
+Ans.Creating an attractive page will be difficult for those who are not experts in CSS. Without using CSS, you will not be able to make the web page, more attractive. So in order to make a web page, we need to have a knowledge of HTML and CSS. In this article, the main focus will be implementing CSS. In order to design a web page we need to first create an HTML web structure.
+
+Creating structure: In this section, we will create a simple structure of web page by using <li> and <section> tags. So this will create a simple interface which you can check by running the following code .
+
+HTML code: 
+ <!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>
+        Simple web Development Template
+    </title>
+</head>
+ 
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#course">Courses</a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+ 
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                    Web Technology
+                </h1>
+                 
+                <p class="text-small">
+                    HTML stands for HyperText Markup 
+                    Language. It is used to design 
+                    web pages using a markup language.
+                    HTML is the combination of Hypertext
+                    and Markup language. Hypertext 
+                    defines the link between the web 
+                    pages. A markup language is used 
+                    to define the text document within 
+                    tag which defines the structure of 
+                    web pages. HTML is a markup language
+                    that is used by the browser to 
+                    manipulate text, images, and other
+                    content to display it in the required 
+                    format.
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="secondHalf">
+                <h1 class="text-big" id="program">
+                    C Programming
+                </h1>
+                <p class="text-small">
+                    C is a procedural programming language.
+                    It was initially developed by Dennis 
+                    Ritchie as a system programming 
+                    language to write operating system. 
+                    The main features of C language include
+                    low-level access to memory, simple set 
+                    of keywords, and clean style, these 
+                    features make C language suitable for
+                    system programming like operating system 
+                    or compiler development.
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Java</h1>
+ 
+            <p class="sectionSubTag text-small">
+                Java has been one of the most 
+                popular programming language 
+                for many years. Java is Object 
+                Oriented. However it is not 
+                considered as pure object oriented
+                as it provides support for primitive
+                data types (like int, char, etc) The
+                Java codes are first compiled into byte
+                code (machine independent code). Then
+                the byte code is run on Java Virtual
+                Machine (JVM) regardless of the
+                underlying architecture.
+            </p>
+ 
+ 
+        </div>
+ 
+        <div class="thumbnail">
+            <img src="img.png" alt="laptop image">
+        </div>
+    </section>
+ 
+    <footer class="background">
+        <p class="text-footer">
+        </p>
+ 
+ 
+    </footer>
+</body>
+ 
+</html>
+ What is embedded style sheets?
+Ans.Embedded style sheets allow you to define styles for the whole HTML document in one place. Embedded style sheets refer to when you embed style sheet information into an HTML document using the <style> element. You do this by embedding the style sheet information within <style></style> tags in the head of your document.
+ What are the external style sheets?
+Ans.External CSS is used to style multiple HTML pages with a single style sheet. External CSS contains a separate CSS file with a .css extension. The CSS file contains style properties added on selectors (For example class, id, heading, . etc.).
+ What are the advantages and disadvantages of using external style sheets?
+Ans.The advantages of External Style Sheets are:
+
+- Using them, the styles of multiple documents can be controlled from one file.
+- Classes can be created for use on multiple HTML element types in many documents.
+- In complex situations, selector and grouping methods can be used to apply styles.
+
+The disadvantages of External Style Sheets are:
+
+- In order to import style information for each document, an extra download is needed.
+- Until the external style sheet is loaded, it may not be possible to render the document.
+- For small number of style definitions, it is not viable.
+ What is the meaning of the CSS selector?
+Ans.CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+ What are the media types allowed by CSS?
+Ans.The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+
+Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.
+
+Unfortunately these media types never got a lot of support by devices, other than the print media type.
+ What is the rule set?
+Ans.A CSS ruleset is various affirmations to various pieces or elements of the document. The objective is to apply a bunch of properties for certain distinct qualities to a solitary, or a particular arrangement of components in the connected HTML page. 
